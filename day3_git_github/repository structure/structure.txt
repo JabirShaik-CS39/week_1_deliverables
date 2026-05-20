@@ -1,0 +1,35 @@
+# Repository structure 
+
+my-project/
+├── .github/               # CI/CD workflows, issue templates
+├── config/                # Environment and app configuration files
+├── docs/                  # Architecture notes, API specs, user guides
+├── src/ (or lib/)         # Main application source code
+│   ├── assets/            # Static files (images, icons, global CSS)
+│   ├── components/        # Reusable UI or logic blocks
+│   └── main.ext           # App entry point (e.g., main.js, app.py, main.go)
+├── tests/                 # Unit, integration, and end-to-end tests
+├── .gitignore             # Tells Git which files/folders to ignore
+├── CHANGELOG.md           # History of version releases and fixes
+├── LICENSE                # Open-source or proprietary legal terms
+├── README.md              # Project overview, setup guide, and documentation
+└── package.json           # Dependency management (varies by language)
+
+#The Root Configuration Layer
+  
+# README.md: The front page of your repository. It should explicitly state what the project does, 
+  prerequisites, how to install dependencies, and how to run the local development server.
+
+# .gitignore: Crucial for security and performance. It ensures heavy folders (like node_modules/) and 
+  sensitive files (like .env containing API keys) never get pushed to version control.
+
+# Dependency Files: Names change by ecosystem (package.json for Node, requirements.txt or 
+  pyproject.toml for Python, Gemfile for Ruby, go.mod for Go).
+
+#The src/ (Source) Directory
+
+# Layered / Technical Split (By Type):Grouping files by their technical role. Easy for small projects,
+  but forces you to jump across 4 folders to edit a single feature.
+
+# Feature-Driven Split (By Domain):Grouping everything related to a specific feature together. 
+  Highly scalable and preferred for large codebases.

@@ -1,0 +1,39 @@
+" git init " — Initializes a brand-new, empty Git repository in your current folder.
+
+" git clone <repository-url> " — Downloads an existing project from GitHub/GitLab to your computer, including all history and branches.
+
+" git status " — (Most Used) Shows you exactly which files have been modified, which are staged, and which are completely untracked.
+
+" git add <file-name> " — Adds a specific file to the staging area, preparing it to be saved.
+
+" git add . " — Adds all modified and new files in the current directory to the staging area at once.
+
+" git commit -m "Your descriptive message" " — Permanently saves everything in your staging area to your local Git history with a clear summary message.
+
+" git log " — Shows a list of all past commits made in this repository, including the author, date, and commit hash.
+
+" git log --oneline " — A cleaner version of the log that condenses each commit into a single line for easy reading.
+
+" git diff " — Shows the exact line-by-line changes you have made in your files that haven't been staged yet.
+
+" git branch " — Lists all local branches in your repository. The one with an asterisk * is your current branch.
+
+" git checkout -b <branch-name> " — Creates a brand-new branch and switches you to it immediately.
+
+" git checkout <branch-name> " — Switches from your current branch to an existing one.
+
+" git merge <branch-name> " — Merges the history of the specified branch into your current branch.
+
+" git remote add origin <url> " — Links your local project to a remote GitHub repository for the first time.
+
+" git push " -u origin <branch-name> — Pushes your local commits up to GitHub. The -u flag remembers the link for future pushes.
+
+" git pull " — Fetches the absolute latest changes from GitHub and merges them into your local branch (keeps your computer up to date).
+
+" git fetch " — Downloads history from GitHub but doesn't modify your files. Safer than pull if you just want to see what others did.
+
+" git restore <file-name> " — Discards your local, uncommitted changes to a file and resets it back to how it looked at your last commit.
+
+" git commit --amend -m "New message" " — Modifies your very last commit message (as we did earlier!).
+
+" git reset --soft HEAD~1 " — Un-commits your last commit. Your code changes remain untouched in your staging area, allowing you to edit them or rewrite the message.
