@@ -1,0 +1,53 @@
+# Postman Works
+
+--> At its core, Postman is used to send HTTP requests to a server and look at what the server 
+    sends back (the response).
+    
+The Method (The Action): You tell Postman what you want to do. The most common actions are:  
+GET: Fetch or read data (like pulling up a user profile).
+
+POST: Create or send new data (like submitting a registration form).
+
+PUT / PATCH: Update existing data (like changing a password).
+
+DELETE: Erase data (like deleting an account).
+
+--> The URL / Endpoint: The specific web address where the API is hosted (e.g.,
+    [https://api.example.com/v1/users](https://api.example.com/v1/users)).
+
+--> Headers: Extra metadata behind the scenes, like telling the server, "Hey, I'm sending this 
+    data in JSON format."
+
+--> The Body: The actual data you are sending to the server (usually written in JSON format 
+    for POST or PUT requests).
+
+--> Collections: Instead of re-typing URLs every time, you can group related API requests into 
+    folders called Collections. It keeps everything organized.
+
+--> Variables & Environments: If you have a local test server, a staging server, and a live 
+    production server, you don't want to rewrite your requests for each one. You can use environments
+    to switch between different base URLs or authentication keys with a single click.
+
+--> Automated Testing: You can write quick JavaScript snippets inside Postman to verify that your 
+    API is working correctly. For example, a basic line like pm.response.to.have.status(200); 
+    ensures the server responded successfully.
+
+
+# Postman use Case                 
+
+--> API Testing & Debugging :- Software testers use it to intentionally send weird data to an API 
+                               to see if it breaks, ensuring the backend handles errors gracefully
+
+--> Development Sandboxing :- While building a backend, developers use Postman to quickly test if 
+                              their newly written code actually works before linking it to a mobile 
+                              app or website interface.
+
+--> Automated Workflows :- You can use the "Collection Runner" to execute 50 API requests in a row 
+                           to check if a massive system update broke any existing features.
+
+--> API Documentation :- Postman can automatically turn your saved collections into clean, readable 
+                         web documentation so other developers know exactly how to use your API.
+
+--> Mock Servers :- If the backend isn't finished yet, front-end developers can set up a "Mock 
+                    Server" in Postman that returns fake data so they can keep designing the user 
+                    interface without waiting.

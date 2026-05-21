@@ -1,0 +1,40 @@
+# HTTP Methods 
+
+--> POST is not idempotent. If you click "Submit Order" three times on a POST request, 
+    you might accidentally buy three shirts. The server handles deciding where the data goes 
+    and creates a new unique ID for it.
+
+    " POST /api/v1/resources HTTP/1.1
+        Host: example.com
+        Content-Type: application/json
+        Content-Length: 33
+    {
+        "name": "New Resource"
+    } "
+
+--> PUT is idempotent. You specify the exact location of the resource 
+    (e.g., /users/123). If you send the same PUT request five times, it will just overwrite 
+    user 123 with the exact same data five times. The end state is identical.
+
+    " PUT /api/v1/resources/123 HTTP/1.1
+        Host: example.com
+        Content-Type: application/json
+        Content-Length: 53
+    {
+        "name": "Replaced Name",
+        "status": "updated"
+    } "
+
+--> Because REST dictates that GET requests must be Safe (read-only), web browsers, Content 
+    Delivery Networks (CDNs), and reverse proxies know they can aggressively cache the response.
+    
+    "  GET /api/v1/resources HTTP/1.1
+       Host: example.com
+       Accept: application/json "
+
+--> DELETE (idempotent), the app can safely resend the exact same request automatically. If the 
+    first one succeeded, the second one changes nothing.
+
+    " DELETE /api/v1/resources/123 HTTP/1.1
+      Host: example.com
+      Authorization: Bearer token_string "

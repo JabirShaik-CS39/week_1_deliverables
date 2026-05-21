@@ -1,0 +1,27 @@
+REST APIs
+# REST stands for Representational State Transfer. 
+# It is not a programming language,a framework, or a piece of software. 
+# Instead, it is an architectural style—a set of design rules created by computer scientist 
+  Roy Fielding in 2000 to guide how computers talk to each other over the internet.
+# When an API (Application Programming Interface) is built using these specific rules, 
+  it is called a RESTful API.
+# In the world of REST, every distinct piece of data on the server is treated as a Resource. 
+# A resource could be a user profile, a photo, an invoice, or a list of products.
+# the client talks to the server by pointing to a specific URL (the resource path) and attaching 
+  an HTTP method (the action).
+
+Methods in HTTP :-
+--> POST  # Used to insert or create data or value inside table in database
+--> PUT   # Used to update the values in table in database
+--> GET   # Used to get the values or data from the database
+--> DELETE# Used to delete the value in the table of a database
+
+Structure of the communication between Client and Server
+
+Client  --->  HTTP    URL ---> Server 
+    |        "Post"              |
+    |        "Put"               |
+    |        "Get"               |
+    |        "Delete"            |
+    |                            |
+    |<--------JSON <-------------|

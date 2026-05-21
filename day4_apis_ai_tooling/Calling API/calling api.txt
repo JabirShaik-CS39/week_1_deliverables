@@ -1,0 +1,29 @@
+# Procedure for calling API
+
+--> Python environment is fully equipped to communicate with the outside world.
+
+--> When script makes that API call, Python acts exactly like Postman does under the hood. 
+
+--> It sends the request structure, waits for the server, and captures the data payload.
+
+--> The Status Code: In Postman, you see Status: 200 OK in the middle right. 
+
+--> In Python, your code tracks this via response.status_code.
+
+--> The Response Body: Postman displays the pretty-printed JSON data right in the main lower pane.
+
+-->  Python handles this data using response.json().
+
+--> The Hidden Details: If you ever need to debug raw network data (like headers or cookies), 
+    Postman lets you open the Console at the bottom left (indicated by the red arrow). 
+
+--> In your Python code, you can print out response.headers to see that exact same underlying data packet.
+
+# Troubleshooting Common Script Errors
+
+--> ConnectionError: If Python throws a long error ending in a connection failure, check your 
+    internet connection or double-check the URL string in your code for typos.
+    
+--> Status Code 4xx or 5xx: If your script runs but prints out an error code like 404 or 400, the 
+    python environment is fine, but the target server is rejecting what you sent. Verify your 
+    endpoint address or the formatting of your JSON data body.
