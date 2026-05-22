@@ -1,0 +1,31 @@
+# OOP - Object Oriented Programming 
+
+--> Object-Oriented Programming (OOP) is a programming paradigm that organizes software design 
+    around data, or "objects," rather than functions and logic. 
+--> Think of an object as a real-world entity that has characteristics (attributes) and behaviors
+    (actions).
+--> example, a Car is an object. It has attributes (color, brand, speed) and behaviors (accelerate, brake).
+
+# OOP concept Based on the following principles:
+
+--> Encapsulation: Bundling the data (variables) and the methods (functions) that operate on the 
+    data into a single unit (a class). It also involves hiding the internal state of an object and 
+    requiring all interaction to happen through public methods.
+
+--> Inheritance: Allowing a new class (child) to adopt the attributes and methods of an existing 
+    class (parent). This prevents you from writing repetitive code.
+
+--> Polymorphism: The ability for different classes to be treated as instances of the same parent 
+    class, or for a single method to behave differently depending on the object calling it 
+    (literally meaning "many forms").
+
+--> Abstraction: Hiding complex implementation details and only showing the essential features of
+    an object. You interact with the interface without needing to understand the underlying chaos.
+
+# OOP Architecture Basics:
+
+--> Class: The blueprint or template. It defines what the object will look like and what it can do.
+
+--> Object: The actual instance created from the blueprint.
+
+

@@ -1,0 +1,45 @@
+# Inheritance Concept 
+
+--> Inheritance allows a new class to adopt attributes and behaviors from existing classes. 
+    There are 5 primary types of inheritance in OOP architecture.
+
+--> Inheritance is divided into 5 types:
+    -> Single Inheritance
+    -> Multi-level Inheritance
+    -> Multiple Inheritance
+    -> Heirarchical Inheritance
+    -> Hybrid Inheritance
+
+# Single Inheritance
+--> Structure: One child class inherits directly from exactly one parent class.
+
+--> Key Benefit: It is the simplest and cleanest form of inheritance, keeping relationships 
+    straightforward and easy to debug.
+
+# Multilevel Inheritance
+--> Structure: A child class inherits from a parent class, which itself is a child of another 
+    higher parent class (creating a Grandparent ---> Parent ---> Child chain).
+
+--> Key Benefit: It builds a linear chain of features where each step down the line automatically 
+    accumulates all traits from the classes above it.
+
+# Multiple Inheritance
+--> Structure: One single child class inherits directly from two or more completely independent 
+    parent classes at the exact same time.
+
+--> Key Detail: Python handles conflicts (like when two parent classes share a method with the 
+    same name) using a strict order called Method Resolution Order (MRO).
+
+# Hierarchical Inheritance
+--> Structure: One single parent class acts as the root blueprint for multiple distinct child 
+    classes.
+
+--> Key Benefit: Great for grouping separate things that share a core baseline identity 
+    (for example, a Manager and a Developer are both fundamentally an Employee).
+
+# Hybrid Inheritance
+--> Structure: A combination of two or more of the inheritance types listed above within a single 
+    system.
+
+--> Key Detail: It commonly creates a "diamond pattern" structure (where a base class splits into 
+    two branches and then merges back into one child class at the bottom).

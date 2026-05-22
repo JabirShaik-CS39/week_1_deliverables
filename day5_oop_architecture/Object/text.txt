@@ -1,0 +1,26 @@
+# object in OOPs Concept
+
+--> The Real-World Entity: An object is a concrete, living instance of a class. If the class is a 
+    blueprint for a house, the object is the actual physical house built on the street.
+--> Memory Allocation: Writing a class allocates zero memory. Physical memory (RAM) is only reserved 
+    by your computer the exact moment an object is created (instantiated).
+--> Unique Identity: Every single object has a completely unique identification address in your 
+    computer's memory. Even if two objects hold identical data, they remain completely separate 
+    entities.
+--> State (Data): An object stores its own distinct values for the variables defined by the class. 
+    Changing data inside one object will never accidentally modify or corrupt the data inside 
+    another object.
+--> Behavior (Actions): An object uses the methods defined in the class to perform actions, applying
+    those operations directly to its own personal data.
+
+# Syntax for the object in OOPs:
+
+object_name = ClassName(argument1, argument2)
+
+# Accessing Attributes and Methods:
+
+# Reading a variable inside the object:
+print(object_name.attribute_name)
+
+# Triggering an action/method inside the object:
+object_name.method_name()

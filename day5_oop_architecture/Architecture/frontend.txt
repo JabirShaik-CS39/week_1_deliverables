@@ -1,0 +1,38 @@
+
+ FRONTEND RESPONSIBILITIES
+----------------------------
+
++------------------------------+
+|         FRONTEND             |
++------------------------------+
+| HTML / CSS / JavaScript      |
+| React / Angular / Vue        |
+| Streamlit / Gradio           |
++------------------------------+
+| Responsibilities:            |
+| - UI                         |
+| - Forms                      |
+| - Buttons                    |
+| - Display Data               |
+| - Send API Requests          |
++------------------------------+
+
+# folder Structure 
+
+src/
+├── assets/             # Global static images, fonts, icons
+├── components/         # Core UI "Design System" (Buttons, Inputs, Modals)
+├── config/             # Environment variables, app constants
+├── core/               # Global services (API client, telemetry, storage auth)
+│   ├── api/            # Axios / Fetch client configuration
+│   └── auth/           # Global authentication handlers
+├── features/           # The business logic domains (Self-contained)
+│   ├── authentication/
+│   ├── dashboard/
+│   └── product-catalog/
+│       ├── components/ # Product-specific visual pieces (ProductCard)
+│       ├── hooks/      # Local state hooks (useProductFetch)
+│       ├── services/   # Feature specific API calls (getProducts)
+│       └── types/      # TypeScript definitions / models
+├── routes/             # App routing configuration and page wrappers
+└── styles/             # Global themes, CSS reset, design tokens

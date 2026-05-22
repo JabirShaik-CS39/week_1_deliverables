@@ -1,0 +1,52 @@
+
+# Database Architecture
+
+ DATABASE RESPONSIBILITIES
+----------------------------
+
++------------------------------+
+|          DATABASE            |
++------------------------------+
+| MySQL / PostgreSQL           |
+| MongoDB / SQLite             |
++------------------------------+
+| Responsibilities:            |
+| - Store Data                 |
+| - Retrieve Data              |
+| - Update Data                |
+| - Delete Data                |
++------------------------------+
+
+# Folder Structure
+
+my-project/
+│
+├── src/
+│   ├── config/
+│   │   └── database.js          # DB connection configuration & pooling
+│   │
+│   ├── domain/                  # The Business Logic Layer
+│   │   ├── models/
+│   │   │   └── User.js          # Pure OOP Business Objects (Plain old objects)
+│   │   └── repositories/
+│   │       └── IUserRepository.js # Interface/Contract defining DB actions
+│   │
+│   ├── infrastructure/          # The Data Access Layer (Database Architecture)
+│   │   ├── database/
+│   │   │   ├── migrations/      # SQL schema version history files
+│   │   │   └── seeds/           # Initial mock/test data for the DB
+│   │   │
+│   │   ├── schemas/             # Framework-specific database schemas
+│   │   │   └── UserSchema.js    # Mongoose/Sequelize/Prisma definitions
+│   │   │
+│   │   └── repositories/        # Actual database implementations
+│   │       └── SqlUserRepository.js # Concrete code doing SQL queries
+│   │
+│   └── presentation/            # The UI / API Layer
+│       ├── controllers/
+│       └── routes/
+│
+├── .env                         # Stores DB credentials (DB_HOST, DB_PASS)
+└── README.md
+
+

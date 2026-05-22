@@ -1,0 +1,33 @@
+# Class in OOPs Concept
+
+--> The Blueprint: A class is a template or factory layout used to create objects. It does not 
+    exist as a real entity itself; it just defines the structure.
+
+--> User-Defined Data Type: It allows you to create your own custom data types (like Car, 
+    User, or Product) to represent complex, real-world things that basic strings or numbers 
+    cannot capture alone.
+
+# Every class contains two main building blocks
+
+--> Attributes (Variables): The data or characteristics that the objects will hold (e.g., 
+    a User class might have username and email).
+--> Methods (Functions): The actions or behaviors that the objects can perform (e.g., a User 
+    class might have a login() method).
+
+--> The Constructor (init): A special setup function inside the class that runs automatically 
+    the exact moment a new object is created. It initializes the object's starting data.
+
+--> Foundation of OOP: A class is the absolute core foundation required to implement all the other 
+    pillars of OOP (Inheritance, Encapsulation, Polymorphism, and Abstraction).
+
+# Syntax 
+ class ClassName:
+    # 1. The Constructor (Runs automatically to initialize data)
+    def __init__(self, parameter1, parameter2):
+        self.attribute1 = parameter1  # Instance variable
+        self.attribute2 = parameter2  # Instance variable
+
+    # 2. A Class Method (Defines a behavior/action)
+    def method_name(self):
+        # Code logic goes here
+        return self.attribute1

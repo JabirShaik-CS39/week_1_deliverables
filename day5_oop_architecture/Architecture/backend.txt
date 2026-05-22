@@ -1,0 +1,44 @@
+
+ BACKEND RESPONSIBILITIES
+---------------------------
+
++------------------------------+
+|          BACKEND             |
++------------------------------+
+| FastAPI / Django / Flask     |
+| Node.js / Spring Boot        |
++------------------------------+
+| Responsibilities:            |
+| - API Handling               |
+| - Business Logic             |
+| - Authentication             |
+| - Validation                 |
+| - Database Communication     |
++------------------------------+
+
+
+[ Client (Web / Mobile) ]
+                              │
+                              ▼  (HTTPS / WSS)
+                    [ API Gateway / Nginx ]
+                              │
+          ┌───────────────────┴───────────────────┐
+          ▼ (Rate Limited & Authenticated)        ▼
+   [ App Server - Instance 1 ]             [ App Server - Instance 2 ]
+          │                  │                    │                  │
+          ▼                  ▼                    ▼                  ▼
+  [ Redis Cache ]     [ Message Queue ]   [ Redis Cache ]     [ Message Queue ]
+          │                  │                    │                  │
+          └──────────┬───────┘                    └──────────┬───────┘
+                     ▼                                       ▼
+           [ Primary Database ]                   [ Background Workers ]
+
+
+# folder Structure 
+src/
+├── controllers/      # Presentation Layer: Validates HTTP inputs, returns responses
+├── services/         # Business Logic Layer: Core rules, calculations, orchestrations
+├── repositories/     # Data Access Layer: Direct database queries (SQL/ORMs)
+├── models/           # Data Structures/Schemas (DB tables)
+├── config/           # Environment variables, database connections
+└── middlewares/      # Auth guards, logging, error handling

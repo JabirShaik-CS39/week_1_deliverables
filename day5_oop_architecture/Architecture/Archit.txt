@@ -1,0 +1,109 @@
+# Basic Architecture
+
+BASIC 3-TIER ARCHITECTURE
+----------------------------
+
+          User
+            ↓
+     +--------------+
+     |  Frontend    |
+     |  (UI Layer)  |
+     +--------------+
+            ↓
+       HTTP Request
+            ↓
+     +--------------+
+     |   Backend    |
+     | (Logic/API)  |
+     +--------------+
+            ↓
+        SQL Query
+            ↓
+     +--------------+
+     |   Database   |
+     | (Data Layer) |
+     +--------------+
+
+# Types of Architecture
+
+FASTAPI ARCHITECTURE
+-----------------------
+
+     React / HTML Frontend
+                ↓
+         FastAPI Backend
+                ↓
+      PostgreSQL / MySQL
+
+
+MICROSERVICE ARCHITECTURE
+----------------------------
+
+          Frontend
+              ↓
+    +------------------+
+    |   API Gateway    |
+    +------------------+
+      ↓      ↓      ↓
+ +--------+ +--------+ +--------+
+ | Auth   | |Payment | | ML/API |
+ |Service | |Service | |Service |
+ +--------+ +--------+ +--------+
+      ↓         ↓          ↓
+   Databases for each service
+
+
+
+MONOLITH ARCHITECTURE
+------------------------
+
++--------------------------------------+
+| Frontend + Backend + Database        |
+| all inside one project/application   |
++--------------------------------------+
+
+
+
+MODERN FULL STACK ARCHITECTURE
+----------------------------------
+
+Frontend:
+- Angular
+
+Backend:
+- .Net
+
+Database:
+- MS Sql Server
+
+Architecture:
+
+Angular UI
+    ↓
+REST API
+    ↓
+FastAPI Server
+    ↓
+SQLAlchemy ORM
+    ↓
+MS SQL Server Database
+
+
+
+REQUEST FLOW
+---------------
+
+Frontend
+   ↓
+HTTP Request
+   ↓
+Backend API
+   ↓
+Database Query
+   ↓
+Database Response
+   ↓
+Backend Response
+   ↓
+Frontend Display
+
