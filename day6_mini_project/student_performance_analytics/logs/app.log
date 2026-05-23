@@ -1,0 +1,30 @@
+2026-05-23 11:33:35,259 [INFO] models.student: Database loaded successfully from primary file.
+2026-05-23 11:33:35,259 [INFO] main: Application initialized successfully.
+2026-05-23 11:35:00,344 [INFO] models.student: Database loaded successfully from primary file.
+2026-05-23 11:35:00,344 [INFO] main: Application initialized successfully.
+2026-05-23 11:50:15,191 [INFO] models.student: Database loaded successfully from primary file.
+2026-05-23 11:50:15,191 [INFO] main: Application initialized successfully.
+2026-05-23 11:51:17,852 [INFO] models.student: Database saved successfully.
+2026-05-23 11:51:17,852 [INFO] main: Added student: STD-0001 - Shaik Jabir
+2026-05-23 11:51:24,933 [ERROR] main: An unhandled exception occurred in the CLI loop:
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Coastal Seven\student_performance_analytics\main.py", line 428, in main
+    view_students_flow(db)
+  File "C:\Users\HP\Desktop\Coastal Seven\student_performance_analytics\main.py", line 153, in view_students_flow
+    sorted_results = custom_sort(results, key_func=lambda s: s.student_id)
+                     ^^^^^^^^^^^
+NameError: name 'custom_sort' is not defined
+2026-05-23 11:51:44,776 [ERROR] main: An unhandled exception occurred in the CLI loop:
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Coastal Seven\student_performance_analytics\main.py", line 428, in main
+    view_students_flow(db)
+  File "C:\Users\HP\Desktop\Coastal Seven\student_performance_analytics\main.py", line 153, in view_students_flow
+    sorted_results = custom_sort(results, key_func=lambda s: s.student_id)
+                     ^^^^^^^^^^^
+NameError: name 'custom_sort' is not defined
+2026-05-23 11:57:06,481 [INFO] models.student: Database saved successfully.
+2026-05-23 11:57:06,481 [INFO] main: Application closed successfully.
+2026-05-23 11:57:30,443 [INFO] models.student: Database loaded successfully from primary file.
+2026-05-23 11:57:30,443 [INFO] main: Application initialized successfully.
+2026-05-23 11:58:40,893 [INFO] models.student: Database saved successfully.
+2026-05-23 11:58:40,893 [INFO] main: Added student: STD-0002 - Karthekya

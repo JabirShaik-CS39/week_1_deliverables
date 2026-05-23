@@ -1,0 +1,12 @@
+[
+    {
+        "student_id": "STD-0001",
+        "name": "Shaik Jabir",
+        "class_section": "11-A",
+        "marks": {
+            "Maths": 98.0,
+            "physics": 99.0,
+            "chemistry": 88.0
+        }
+    }
+]
